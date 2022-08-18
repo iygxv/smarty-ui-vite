@@ -1,4 +1,4 @@
-import { defineComponent, createVNode, createTextVNode } from "vue";
+import { defineComponent, createVNode } from "vue";
 const __uno = "";
 const props = {
   size: {
@@ -68,24 +68,13 @@ const Button = defineComponent({
     }, null) : "", slots.default ? slots.default() : ""]);
   }
 });
-const _sfc_main = {};
-const JSXButton = defineComponent({
-  name: "JSXButton",
-  render() {
-    return createVNode("button", null, [createTextVNode("JSX Button")]);
-  }
-});
-const entry = {
+const index = {
   install(app) {
     app.component(Button.name, Button);
-    app.component(_sfc_main.name, _sfc_main);
-    app.component(JSXButton.name, JSXButton);
   }
 };
 export {
   Button,
-  JSXButton,
-  _sfc_main as SFCButton,
-  entry as default
+  index as default
 };
-//# sourceMappingURL=smarty-ui.mjs.map
+//# sourceMappingURL=index.mjs.map
